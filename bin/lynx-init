@@ -4,10 +4,7 @@ var program = require('commander')
 var fs = require('fs')
 var readFile = require('fs').readFileSync
 var writeFile = require('fs').writeFileSync
-var exists = require('fs').exists
-if (exists) {
-  exists = require('fs').existsSync
-}
+var exists = require('fs').existsSync
 var ora = require('ora')
 var logger = require('../lib/logger')
 var download = require('download-git-repo')
